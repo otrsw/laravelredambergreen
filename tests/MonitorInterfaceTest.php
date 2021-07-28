@@ -68,7 +68,8 @@ class MonitorInterfaceTest extends TestCase
 
         $this->assertEquals(Arr::get($monitor, 'status', 'unknown'), 'amber');
     }
-
+    
+    /** @test */
     public function does_authenticate_token()
     {
         config()->set('laravelredambergreen.token', static::TEST_TOKEN);
