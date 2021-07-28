@@ -70,10 +70,10 @@ class MonitorInterfaceTest extends TestCase
     }
     
     /** @test */
-    public function does_authenticate_token()
+    public function prevents_access_without_token()
     {
-        config()->set('laravelredambergreen.token', static::TEST_TOKEN);
-
+        $error = 'Unknown';
+        config()->set('laravelredambergreen.token', 'FUBAR');
         try {
             $monitors = LaravelRedAmberGreen::monitors();
         } catch (RagException $rag) {
