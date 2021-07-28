@@ -3,6 +3,8 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/otrsw/laravelredambergreen/run-tests?label=tests)](https://github.com/otrsw/laravelredambergreen/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/otrsw/laravelredambergreen/Check%20&%20fix%20styling?label=code%20style)](https://github.com/otrsw/laravelredambergreen/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
+
 
 This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
 
