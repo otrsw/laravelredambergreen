@@ -1,5 +1,3 @@
 # The license
 
-Copyright (c) author name <author email>
-
-...Add your license text here...
+Copyright (c) ONTHEROCK Software CC <rag@ontherock.software>
