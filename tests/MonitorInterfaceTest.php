@@ -7,7 +7,8 @@ use Orchestra\Testbench\TestCase;
 
 class MonitorInterfaceTest extends TestCase
 {
-    public const TEST_TOKEN = 'M7KhX3bYarF816O4mJSquVaJfjW7uq21z5VlRKgW';
+    //API Token for unit test requests
+    public const TEST_TOKEN = 'glfP2Ys8wR23vgtRrBfBFvur2FOlMAfnexhPN8RT';
 
     /** @test */
     public function can_list_monitors()
