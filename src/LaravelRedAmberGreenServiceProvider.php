@@ -25,8 +25,7 @@ class LaravelRedAmberGreenServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/../config/laravelredambergreen.php' => config_path('laravelredambergreen.php'),
-        ]);        
-
+        ]);
     }
 
     /**
@@ -40,7 +39,7 @@ class LaravelRedAmberGreenServiceProvider extends ServiceProvider
 
         // Register the service the package provides.
         $this->app->singleton('laravelredambergreen', function ($app) {
-            return new LaravelRedAmberGreen;
+            return new LaravelRedAmberGreen();
         });
     }
 

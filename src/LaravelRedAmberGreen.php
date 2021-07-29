@@ -73,7 +73,6 @@ class LaravelRedAmberGreen
 
     public static function amber($name, $message = null, $moreinfourl = null)
     {
-        
         $data = [];
         if ($message) {
             $data['message'] = $message;

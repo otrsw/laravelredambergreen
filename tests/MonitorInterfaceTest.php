@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Arr;
-use Orchestra\Testbench\TestCase;
-use Ontherocksoftware\LaravelRedAmberGreen\LaravelRedAmberGreen;
 use Ontherocksoftware\LaravelRedAmberGreen\Exceptions\RagException;
+use Ontherocksoftware\LaravelRedAmberGreen\LaravelRedAmberGreen;
+use Orchestra\Testbench\TestCase;
 
 class MonitorInterfaceTest extends TestCase
 {
@@ -68,12 +68,13 @@ class MonitorInterfaceTest extends TestCase
 
         $this->assertEquals(Arr::get($monitor, 'status', 'unknown'), 'amber');
     }
-    
+
     /** @test */
     public function prevents_access_without_token()
     {
         $error = 'Unknown';
         config()->set('laravelredambergreen.token', 'FUBAR');
+
         try {
             $monitors = LaravelRedAmberGreen::monitors();
         } catch (RagException $rag) {
