@@ -6,44 +6,79 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/otrsw/laravelredambergreen/Check%20&%20fix%20styling?label=code%20style)](https://github.com/otrsw/laravelredambergreen/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
 
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+Quick and simple way to expose realtime business KPIs of your system or software to your user community.
 
 ## Installation
 
-Via Composer
+You can install the package via composer:
 
-``` bash
-$ composer require ontherocksoftware/laravelredambergreen
+```bash
+composer require ontherocksoftware/laravelredambergreen
+```
+
+You can publish the config file with:
+```bash
+php artisan vendor:publish --provider="Ontherocksoftware\LaravelRedAmberGreen\LaravelRedAmberGreenServiceProvider"
+```
+
+This is the contents of the published config file:
+
+```php
+return [
+
+    /**
+     * Your API token. Obtain from your account at https://red-amber.green 
+     */
+    'token' => env('RAG_API_TOKEN','YOUR_TOKEN'),
+
+    /**
+     * If you prefer to use the service without exception, set this to false
+     */
+
+     'exceptions' => env('RAG_WITH_EXCEPTIONS',true)
+
+];
 ```
 
 ## Usage
 
-## Change log
+```php
+use Ontherocksoftware\LaravelRedAmberGreen\Facades\LaravelRedAmberGreen;
 
-Please see the [changelog](changelog.md) for more information on what has changed recently.
+/**
+ * Assuming you added a monitor to your account named 'Stock Levels' you can interact with that monitor 
+ * using the static methods provided:
+ */ 
 
-## Testing
 
-``` bash
-$ composer test
+//Your code here to check stock levels....
+
+//If all good just set to green
+LaravelRedAmberGreen::green('Stock Levels');
+
+//If you want to provide additional info you can pass a short message and a link to more in depth info
+LaravelRedAmberGreen::amber('Stock Levels', 'Stock levels dropped significantly in the last 24 hours', 'https://www.mysystem.com/dashboard/stocklevels');
+
+//And of course if things are already really bad use the red method
+LaravelRedAmberGreen::red('Stock Levels', 'We ran out of stock for some products', 'https://www.mysystem.com/dashboard/outofstock');
+
 ```
 
-## Contributing
+## Changelog
 
-Please see [contributing.md](contributing.md) for details and a todolist.
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
-## Security
+## Security Vulnerabilities
 
-If you discover any security related issues, please email author email instead of using the issue tracker.
+Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
-- [author name][link-author]
-- [All Contributors][link-contributors]
+- [Heinz Seldte](https://github.com/otrsw)
 
 ## License
 
-license. Please see the [license file](license.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/ontherocksoftware/laravelredambergreen.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/ontherocksoftware/laravelredambergreen.svg?style=flat-square
