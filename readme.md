@@ -2,8 +2,8 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/otrsw/laravelredambergreen/run-tests?label=tests)](https://github.com/otrsw/laravelredambergreen/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/otrsw/laravelredambergreen/Check%20&%20fix%20styling?label=code%20style)](https://github.com/otrsw/laravelredambergreen/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/otrsw/laravelredambergreen/run-tests?label=tests)](https://github.com/otrsw/laravelredambergreen/actions?query=workflow%3Arun-tests+branch%3Aproduction)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/otrsw/laravelredambergreen/Check%20&%20fix%20styling?label=code%20style)](https://github.com/otrsw/laravelredambergreen/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Aproduction)
 
 
 Quick and simple way to expose realtime business KPIs of your system or software to your user community.
