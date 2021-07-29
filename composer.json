@@ -1,7 +1,7 @@
 {
     "name": "ontherocksoftware/laravelredambergreen",
-    "description": ":package_description",
-    "license": "license",
+    "description": "Laravel package to easily update business KPI monitors for your software or service.",
+    "license": "MIT",
     "authors": [
         {
             "name": "Heinz Seldte",
