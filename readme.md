@@ -27,12 +27,12 @@ This is the contents of the published config file:
 return [
 
     /**
-     * Your API token. Obtain from your account at https://red-amber.green 
+     * Your API token. Obtain from your account at https://app.red-amber.green/
      */
     'token' => env('RAG_API_TOKEN','YOUR_TOKEN'),
 
     /**
-     * If you prefer to use the service without exception, set this to false
+     * If you prefer to use the service without exceptions, set this to false
      */
 
      'exceptions' => env('RAG_WITH_EXCEPTIONS',true)
@@ -67,14 +67,6 @@ LaravelRedAmberGreen::red('Stock Levels', 'We ran out of stock for some products
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
-## Credits
-
-- [Heinz Seldte](https://github.com/otrsw)
 
 ## License
 
